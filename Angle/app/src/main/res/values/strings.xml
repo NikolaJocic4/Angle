@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Angle</string>
+    <string name="underlined_text"><u>Register</u></string>
+    <string-array name="category">
+        <item>Football</item>
+        <item>Basketball</item>
+        <item>Tennis</item>
+    </string-array>
+    <string-array name="sort">
+        <item>Football</item>
+        <item>Basketball</item>
+        <item>Tennis</item>
+        <item>All</item>
+    </string-array>
+</resources>

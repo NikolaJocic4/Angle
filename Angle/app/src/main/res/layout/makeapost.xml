@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="makeapost">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Fixed Position View at the Top -->
+                <RelativeLayout
+                    android:id="@+id/topFixedLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="91dp">
+
+                    <!-- Contents of the fixed view at the top -->
+                    <!-- Navbar Header -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="91dp">
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="25dp"
+                            android:background="@drawable/angle_image" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1.5dp"
+                            android:layout_marginTop="90dp"
+                            android:background="#000000" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <!-- Make-A-Post -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="122dp"
+                    android:text="Make-A-Post"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+                <!-- Rectangle 6 -->
+                <LinearLayout
+                    android:layout_width="312dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="213dp"
+                    android:background="#000000"
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:padding="1dp"
+                    android:weightSum="1">
+
+                    <EditText
+                        android:id="@+id/write_headline"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFFFFF"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <!-- Write the headline -->
+                <TextView
+                    android:layout_width="208dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="179dp"
+                    android:text="Write the headline"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:gravity="center_vertical" />
+
+                <!-- Story: -->
+                <TextView
+                    android:layout_width="208dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="262dp"
+                    android:text="Story:"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:gravity="center_vertical" />
+
+                <!-- Category: -->
+                <Spinner
+                    android:id="@+id/category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="490dp"
+                    android:entries="@array/category"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:gravity="center_vertical" />
+
+                <!-- Rectangle 7 -->
+                <LinearLayout
+                    android:layout_width="312dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="296dp"
+                    android:background="#000000"
+                    android:orientation="vertical"
+                    android:layout_centerHorizontal="true"
+                    android:padding="1dp"
+                    android:weightSum="1">
+
+                    <EditText
+                        android:id="@+id/write_story"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFFFFF"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <!-- X -->
+                <TextView
+                    android:id="@+id/x"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="350dp"
+                    android:layout_marginTop="122dp"
+                    android:text="X"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+                <!-- Edit Profile Button -->
+                <Button
+                    android:id="@+id/bt_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="590dp"
+                    android:text="Post"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:backgroundTint="#000000"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+
+                <!-- Fixed Position View at the Bottom -->
+                <RelativeLayout
+                    android:id="@+id/bottomFixedLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="71dp"
+                    android:layout_alignParentBottom="true">
+
+                    <!-- Contents of the fixed view at the bottom -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="71dp">
+                        <ImageView
+                            android:id="@+id/profile"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="320dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/profile_icon" />
+
+                        <ImageView
+                            android:id="@+id/news"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="43dp"
+                            android:layout_marginTop="17dp"
+                            android:background="@drawable/news_image" />
+
+                        <ImageView
+                            android:id="@+id/post"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="184dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/post_image" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1.5dp"
+                            android:layout_marginTop="0dp"
+                            android:background="#000000" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
